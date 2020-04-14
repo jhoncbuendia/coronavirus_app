@@ -1,8 +1,15 @@
 const express = require('express')
-const router = express.Router()
+const statisticController = require('./statistic.controller')
 
+const router = express.Router()
 router.get('/', function (req, res) {
-    res.send('statistics get /')
+    statisticController.getStatisticByCountry()
+    .then(function(response) {
+        res.json(response.data)
+    })
+    .catch(function (error) {
+        console.log(error);
+    })
 })
 
 router.post('/', function (req, res) {
