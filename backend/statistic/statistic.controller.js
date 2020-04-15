@@ -2,8 +2,8 @@ const StatisticService = require('./statistic.service')
 
 class StatisticController {
     
-    getStatisticByCountry() {
-        return StatisticService.getStatisticByCountry()
+    getStatisticByCountry(country) {
+        return StatisticService.getStatisticByCountry(country)
     }
 }
 
