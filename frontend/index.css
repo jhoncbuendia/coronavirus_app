@@ -62,7 +62,7 @@ body {
 }
 
 input.country {
-    border-width: 0.4px;
+    border-width: 0.1rem;
     border-radius:6px;
     padding:0.4em 1.2em;
 }
