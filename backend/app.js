@@ -1,9 +1,12 @@
 const express = require('express')
 const app = express()
-const port = 8080
+var cors = require('cors')
 const statisticRouter = require('./statistic/statistic.router')
 const exceptionMiddleware = require('./middleware/exception.middleware')
 const authenticationMiddleware = require('./middleware/authentication.middleware')
+const port = 8080
+
+app.use(cors())
 
 app.use(authenticationMiddleware.jwt)
 
