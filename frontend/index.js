@@ -1,10 +1,8 @@
-const res = axios.create({
-    method: 'get',
-    baseURL: 'localhost:8080',
-    headers: { 'authorization': 'abc', 'Access-Control-Allow-Origin': '*'}
-});
+const options = {
+    headers: {'authorization': 'abc'}
+  };
 
-const getCoronaDatos = res.get('/statistic/co');
+const getCoronaDatos = axios.get('http://localhost:8080/statistic/co', options);
 getCoronaDatos.then( (r) => {
     console.log(r);
 });
