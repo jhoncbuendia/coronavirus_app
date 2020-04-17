@@ -34,6 +34,7 @@ const buildDashboardByCountry = function (data) {
 }
 
 const fillChart = function(data) {
+
     let labels = [];
     let confirmedData = [];
     let deathsData = [];
@@ -78,7 +79,8 @@ const fillChart = function(data) {
                         beginAtZero: true
                     }
                 }]
-            }
+            },
+            events: ['click']
         }
     };
     
