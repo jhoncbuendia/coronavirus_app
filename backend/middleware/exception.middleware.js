@@ -20,6 +20,7 @@ const formatHttpError = (code) => {
 }
 
 class ExceptionMiddleware {
+    
     apiExceptionHandler(err, req, res, next) {
         const errorFormated = formatHttpError(err.code)
         res.json(errorFormated)
