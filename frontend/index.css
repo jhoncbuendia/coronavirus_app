@@ -9,6 +9,7 @@ body {
     margin-top: 4rem;
     text-align: center;
     min-height: 1rem;
+    text-transform: uppercase;
   }
 
 .title h2 {
@@ -53,4 +54,26 @@ body {
     height: 578px;
     width: 1159px;
     margin: 0 auto;
+}
+
+.status-message {
+    color: rgb(255, 72, 72);
+    font-size: small;
+}
+
+input.country {
+    border-width: 0.4px;
+    border-radius:6px;
+    padding:0.4em 1.2em;
+}
+
+a.search-button {
+    background-color:#3d94f6;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:14px;
+	padding:0.3em 1.2em;
+	text-decoration:none;
 }

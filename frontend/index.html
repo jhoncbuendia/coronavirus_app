@@ -9,43 +9,47 @@
     <title>Coronavirus App</title>
 </head>
 <body>
-    <h1 class="title">DASHBOARD COLOMBIA</h2>
+    <input type="text" id="country" class="country" placeholder="Example: CO">
+    <a class="search-button" value="Search" href="javascript:getDataByCountry(document.getElementById('country').value)">Search</a>
+    
+    <span id="statusMessage" class="status-message"></span>
+    <h1 class="title" id="title">DASHBOARD</h2>
     <div class="container">
         <div class="dashboard">
             <div class="block">
-                <h3>Confirmados:</h3>
-                <span>2979</span>
+                <h3>Confirmed:</h3>
+                <span id="confirmed">0</span>
             </div>
             <div class="block">
-                <h3>Recuperados:</h3>
-                <span>354</span>
+                <h3>Recovered:</h3>
+                <span id="recovered">0</span>
             </div>
             <div class="block">
-                <h3>Muertes:</h3>
-                <span>127</span>
+                <h3>Deaths:</h3>
+                <span id="deaths">0</span>
             </div>
             <div class="block">
-                <h3>Críticos:</h3>
-                <span>106</span>
+                <h3>Critical:</h3>
+                <span id="critical">0</span>
             </div>
         </div>
     </div>
  
-    <h1 class=title>REPORTE DE HOY</h2>
+    <h1 class=title>TODAY</h2>
     <div class="container">
         <div class="today">
             <div class="block">
-                <h3>Confirmados:</h3>
-                <span>127</span>
+                <h3>Confirmed:</h3>
+                <span id="today-confirmed">0</span>
             </div>
             <div class="block">
-                <h3>Muertes:</h3>
-                <span>15</span>
+                <h3>Deaths:</h3>
+                <span id="today-deaths">0</span>
             </div>
         </div>
     </div>
 ​
-    <h1 class=title>ESTADÍSTICAS</h2>
+    <h1 class=title>TIMELINE</h2>
     <div class="chart">
         <canvas id="myChart" ></canvas>
     </div>
