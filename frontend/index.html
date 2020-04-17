@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Coronavirus App</title>
+</head>
+<body>
+    <h1 class="title">DASHBOARD COLOMBIA</h2>
+    <div class="container">
+        <div class="dashboard">
+            <div class="block">
+                <h3>Confirmados:</h3>
+                <span>2979</span>
+            </div>
+            <div class="block">
+                <h3>Recuperados:</h3>
+                <span>354</span>
+            </div>
+            <div class="block">
+                <h3>Muertes:</h3>
+                <span>127</span>
+            </div>
+            <div class="block">
+                <h3>Críticos:</h3>
+                <span>106</span>
+            </div>
+        </div>
+    </div>
+ 
+    <h1 class=title>REPORTE DE HOY</h2>
+    <div class="container">
+        <div class="today">
+            <div class="block">
+                <h3>Confirmados:</h3>
+                <span>127</span>
+            </div>
+            <div class="block">
+                <h3>Muertes:</h3>
+                <span>15</span>
+            </div>
+        </div>
+    </div>
+​
+    <h1 class=title>ESTADÍSTICAS</h2>
+    <div class="chart">
+        <canvas id="myChart" ></canvas>
+    </div>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
