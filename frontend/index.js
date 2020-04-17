@@ -34,7 +34,6 @@ const buildDashboardByCountry = function (data) {
 }
 
 const fillChart = function(data) {
-    console.log(data);
     let labels = [];
     let confirmedData = [];
     let deathsData = [];
